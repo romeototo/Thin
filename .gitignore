@@ -5,6 +5,8 @@
 *.env
 credentials.json
 token.txt
+.openclaw/backup-config.json
+backup-config.json
 
 # Logs
 *.log

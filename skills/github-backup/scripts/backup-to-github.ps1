@@ -9,7 +9,7 @@ Write-Host "🍦 ไอติมกำลัง backup..." -ForegroundColor Mage
 try {
     Set-Location $Workspace
     
-    # Load config
+    # Load config (config file is in .gitignore so won't be committed)
     $configPath = ".openclaw\backup-config.json"
     if (Test-Path $configPath) {
         $config = Get-Content $configPath | ConvertFrom-Json
@@ -17,7 +17,7 @@ try {
         git remote set-url origin $authUrl 2>$null
     }
     
-    # Add all changes
+    # Add all changes (config file is excluded via .gitignore)
     git add -A 2>$null
     
     # Check for changes
