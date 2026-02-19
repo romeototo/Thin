@@ -1,0 +1,28 @@
+# OpenClaw workspace backup - files to ignore
+
+# Secrets & Config
+.env
+*.env
+credentials.json
+token.txt
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large media files (optional - remove if you want to backup media)
+# *.mp4
+# *.mp3
+# *.wav
+
+# Node modules if any
+node_modules/
