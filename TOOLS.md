@@ -37,4 +37,11 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## Tavily MCP News Skill
+
+- Skill path: `skills/tavily-mcp-news/SKILL.md`
+- Setup script: `skills/tavily-mcp-news/scripts/setup-tavily-agent.ps1`
+- Safety checklist: `TAVILY_SKILL_CHECKLIST.md`
+- Default external clone path: `external/tavily-mcp-agent`
+
 Add whatever helps you do your job. This is your cheat sheet.
