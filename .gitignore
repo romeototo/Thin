@@ -12,6 +12,9 @@ backup-config.json
 *.log
 logs/
 
+# Local backup archives
+backups/
+
 # Temporary files
 *.tmp
 *.temp
