@@ -4,12 +4,16 @@ param(
 )
 
 $ErrorActionPreference = 'Continue'
+$OpenClawBin = 'C:\Users\admin\AppData\Roaming\npm\openclaw.cmd'
 
 function Step($msg) {
     Write-Host "`n=== $msg ===" -ForegroundColor Cyan
 }
 
 function Run($cmd) {
+    if ($cmd -like 'openclaw*' -and (Test-Path $OpenClawBin)) {
+        $cmd = 'cmd /c ""' + $OpenClawBin + '" ' + ($cmd -replace '^openclaw\s*','') + '"'
+    }
     Write-Host "> $cmd" -ForegroundColor Yellow
     try {
         Invoke-Expression $cmd
